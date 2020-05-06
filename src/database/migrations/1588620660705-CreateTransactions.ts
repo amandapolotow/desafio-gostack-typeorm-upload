@@ -1,9 +1,4 @@
-import {
-  MigrationInterface,
-  QueryRunner,
-  Table,
-  TableForeignKey,
-} from 'typeorm';
+import { MigrationInterface, QueryRunner, Table } from 'typeorm';
 
 export default class CreateTransactions1588620660705
   implements MigrationInterface {
@@ -29,7 +24,7 @@ export default class CreateTransactions1588620660705
           },
           {
             name: 'value',
-            type: 'money',
+            type: 'numeric(8,2)',
           },
           {
             name: 'category_id',
